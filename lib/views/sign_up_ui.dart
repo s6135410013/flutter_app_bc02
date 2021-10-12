@@ -139,7 +139,7 @@ class _SignUpUIState extends State<SignUpUI> {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 10,
               ),
               Padding(
                 padding: const EdgeInsets.only(
@@ -148,29 +148,30 @@ class _SignUpUIState extends State<SignUpUI> {
                 ),
                 child: TextField(
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.orangeAccent,
+                    fontSize: 25,
                   ),
                   decoration: InputDecoration(
+                    labelText: "NAME",
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                      fontFamily: "Kanit",
+                    ),
                     enabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.grey,
+                        color: Colors.orangeAccent,
                       ),
                     ),
                     focusedBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
                         color: Color(0xFFE38D00),
                       ),
-                    ),
-                    prefixIcon: Icon(
-                      Icons.person_outline,
-                      size: 30,
-                      color: Colors.grey,
                     ),
                   ),
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: 1,
               ),
               Padding(
                 padding: const EdgeInsets.only(
@@ -178,29 +179,25 @@ class _SignUpUIState extends State<SignUpUI> {
                   right: 40,
                 ),
                 child: TextField(
-                  obscureText: true,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.orangeAccent,
+                    fontSize: 25,
                   ),
                   decoration: InputDecoration(
+                    labelText: "USER",
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                      fontFamily: "Kanit",
+                    ),
                     enabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.grey,
+                        color: Colors.orangeAccent,
                       ),
                     ),
                     focusedBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
                         color: Color(0xFFE38D00),
                       ),
-                    ),
-                    prefixIcon: Icon(
-                      Icons.lock_outline,
-                      size: 30,
-                      color: Colors.grey,
-                    ),
-                    hintText: 'Password...',
-                    hintStyle: TextStyle(
-                      color: Colors.grey,
                     ),
                   ),
                 ),
